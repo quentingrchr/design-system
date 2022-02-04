@@ -2,43 +2,43 @@
 
 .icon {
   width: fit-content;
-  background-color: var(--color-icon-background);
+  fill: var(--color-icon-color);
 }
 
 /* Primary */
 .icon--primary-base {
-  --color-icon-background: #{$color-primary-base};
+  --color-icon-color: #{$color-primary-base};
 }
 .icon--primary-lighten {
-  --color-icon-background: #{$color-primary-lighten};
+  --color-icon-color: #{$color-primary-lighten};
 }
 .icon--primary-darken {
-  --color-icon-background: #{$color-primary-darken};
+  --color-icon-color: #{$color-primary-darken};
 }
 .icon--primary-white {
-  --color-icon-background: #{$color-primary-white};
+  --color-icon-color: #{$color-primary-white};
 }
 .icon--primary-dark {
-  --color-icon-background: #{$color-primary-dark};
+  --color-icon-color: #{$color-primary-dark};
 }
 
 /* Grey */
 .icon--grey-base {
-  --color-icon-background: #{$color-grey-base};
+  --color-icon-color: #{$color-grey-base};
 }
 .icon--grey-lighten {
-  --color-icon-background: #{$color-grey-lighten};
+  --color-icon-color: #{$color-grey-lighten};
 }
 .icon--grey-darken {
-  --color-icon-background: #{$color-grey-darken};
+  --color-icon-color: #{$color-grey-darken};
 }
 
 /* Success */
 .icon--success-base {
-  --color-icon-background: #{$color-success-base};
+  --color-icon-color: #{$color-success-base};
 }
 
 /* Danger */
 .icon--danger-base {
-  --color-icon-background: #{$color-danger-base};
+  --color-icon-color: #{$color-danger-base};
 }
