@@ -4,6 +4,8 @@ import { ReactComponent as EyeOpen } from "../../assets/icons/eye-open.svg";
 import { ReactComponent as EyeSlashed } from "../../assets/icons/eye-slashed.svg";
 import { ReactComponent as Plus } from "../../assets/icons/plus.svg";
 
+import "./style.scss";
+
 import { IconsType, ColorsType } from "../../types";
 
 export interface IProps {
@@ -22,5 +24,5 @@ const Icons: IIcons = {
 };
 
 export default function Icon({ type, color }: IProps) {
-  return <div className={`fill-${color}`}>{Icons[type]}</div>;
+  return <div className={`icon icon-${color}`}>{Icons[type]}</div>;
 }

@@ -1,0 +1,8 @@
+@use "sass:map";
+@import "../../style/vars/_index.scss";
+
+.input {
+  &__input {
+    padding: 18px 0;
+  }
+}

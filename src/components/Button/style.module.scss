@@ -6,10 +6,9 @@
   width: fit-content;
   padding: 16px 40px;
   border-radius: 8px;
-  @include typo-cta-primary($color: map.get($colors, primary-white));
-  background-color: map.get($colors, primary-base);
+
   cursor: pointer;
-  transition: background-color .15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
 
   &:hover {
     background-color: map.get($colors, primary-lighten);
@@ -24,7 +23,7 @@
     box-shadow: inset 2px 2px 4px map.get($colors, primary-base);
     background-color: map.get($colors, primary-base);
     transform: translate3d(0, 2px, 0) scale(0.95) skewX(5deg);
-    transition: transform .1s ease-in-out;
+    transition: transform 0.1s ease-in-out;
   }
 
   &:disabled {
@@ -35,9 +34,9 @@
 
 @each $name, $color in $colors {
   .bg-#{$name} {
-    background: $color;
+    background-color: #{$color};
   }
   .text-#{$name} {
-    color: $color;
+    @include typo-cta-primary($color: #{$color});
   }
 }

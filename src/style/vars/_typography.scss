@@ -1,40 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* todo importer les fichiers */
 
 $font-family: "Inter", sans-serif;
 
-@mixin typo-headline-large($color: #000000) {
+@mixin typo-headline-large() {
   font-family: $font-family;
   font-weight: 700;
-  line-height: 48px;
+  line-height: 1.2;
   font-size: 40px;
-  color: $color;
 }
 
-@mixin typo-body-m($color: #000000) {
+@mixin typo-body-m() {
   font-family: $font-family;
   font-weight: 300;
-  line-height: 48px;
+  line-height: 1.2;
   font-size: 16px;
-  color: $color;
 }
 
-@mixin typo-body-m-underline($color: #000000) {
+@mixin typo-body-m-underline() {
   @include typo-body-m;
   text-decoration: underline;
-  color: $color;
 }
 
-@mixin typo-cta-primary($color: #000000) {
+@mixin typo-cta-primary() {
   font-family: $font-family;
   font-weight: 700;
   font-size: 24px;
-  color: $color;
 }
 
-@mixin typo-cta-secondary($color: #000000) {
+@mixin typo-cta-secondary() {
   font-family: $font-family;
   font-weight: 300;
   font-size: 16px;
   text-decoration: underline;
-  color: $color;
 }

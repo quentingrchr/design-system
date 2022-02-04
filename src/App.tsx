@@ -2,12 +2,12 @@ import React from "react";
 import Icon from "./components/Icon/index";
 
 import "./style/global.scss";
-import Button from "./components/Button/index";
+import Input from "./components/Input/index";
 
 function App() {
   return (
     <div>
-      <Icon color="primary-base" type="check" />
+      <Input />
     </div>
   );
 }

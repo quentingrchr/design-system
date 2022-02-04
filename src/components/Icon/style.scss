@@ -1,12 +1,12 @@
 @use "sass:map";
 @import "../../style/vars/_index.scss";
 
-.iconContainer {
+.icon {
   width: fit-content;
 }
 
 @each $name, $color in $colors {
-  .fill-#{$name} {
+  .icon-#{$name} {
     fill: $color;
   }
 }
