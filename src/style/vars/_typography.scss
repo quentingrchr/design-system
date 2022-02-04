@@ -5,32 +5,46 @@ $font-family: "Inter", sans-serif;
 
 @mixin typo-headline-large() {
   font-family: $font-family;
+  font-size: 4rem;
   font-weight: 700;
   line-height: 1.2;
-  font-size: 40px;
 }
 
 @mixin typo-body-m() {
   font-family: $font-family;
+  font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.2;
-  font-size: 16px;
 }
 
-@mixin typo-body-m-underline() {
+@mixin typo-body-m-underlined() {
   @include typo-body-m;
   text-decoration: underline;
 }
 
 @mixin typo-cta-primary() {
   font-family: $font-family;
+  font-size: 2.4rem;
   font-weight: 700;
-  font-size: 24px;
 }
 
 @mixin typo-cta-secondary() {
   font-family: $font-family;
+  font-size: 1.6rem;
   font-weight: 300;
-  font-size: 16px;
   text-decoration: underline;
+}
+
+@mixin typo-label() {
+  font-family: $font-family;
+  font-size: 2.4rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+@mixin typo-placeholder() {
+  font-family: $font-family;
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 400;
 }

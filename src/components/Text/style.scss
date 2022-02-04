@@ -1,0 +1,27 @@
+@import "../../style/vars/_index.scss";
+
+.text {
+  color: black;
+}
+.heading-l {
+  @include typo-headline-large;
+}
+.body-m {
+  @include typo-body-m;
+}
+.body-m-underline {
+  @include typo-body-m-underline;
+}
+.label {
+  @include typo-label;
+}
+.placeholder {
+  @include typo-placeholder;
+}
+
+.cta-primary {
+  @include typo-cta-primary;
+}
+.cta-secondary {
+  @include typo-cta-secondary;
+}
