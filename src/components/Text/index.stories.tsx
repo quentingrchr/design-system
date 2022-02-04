@@ -27,7 +27,7 @@ Paragraph.args = {
 };
 
 const ParagraphUnderlined = Template.bind({});
-Paragraph.args = {
+ParagraphUnderlined.args = {
   tag: "p",
   content: "I am a paragraph underlined",
   typo: "body-m-underlined",

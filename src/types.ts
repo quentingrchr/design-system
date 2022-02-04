@@ -25,3 +25,12 @@ export type HTMLTextTag =
   | "b"
   | "i"
   | "u";
+
+export type TextTypography =
+  | "heading-l"
+  | "body-m"
+  | "body-m-underlined"
+  | "label"
+  | "placeholder"
+  | "cta-primary"
+  | "cta-secondary";
