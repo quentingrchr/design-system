@@ -6,6 +6,7 @@ export type ColorsType =
   | "primary-black"
   | "primary-white"
   | "danger"
+  | "white"
   | "grey"
   | "grey-lighten"
   | "grey-darken"
