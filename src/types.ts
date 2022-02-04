@@ -24,7 +24,8 @@ export type HTMLTextTag =
   | "h6"
   | "b"
   | "i"
-  | "u";
+  | "u"
+  | "label";
 
 export type TextTypography =
   | "heading-l"
@@ -34,3 +35,5 @@ export type TextTypography =
   | "placeholder"
   | "cta-primary"
   | "cta-secondary";
+
+export type InputType = "text" | "password" | "email" | "number" | "tel";

@@ -1,8 +1,13 @@
-@use "sass:map";
 @import "../../style/vars/_index.scss";
 
 .input {
   &__input {
-    padding: 18px 0;
+    display: block;
+    padding: 1.8rem 2.4rem;
+    @include typo-placeholder;
+    border-radius: var(--btn-border-radius);
+    outline: none;
+    border: 1px solid $color-primary-dark;
+    color: lighten($color: $color-primary-dark, $amount: 50%);
   }
 }

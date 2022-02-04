@@ -1,9 +1,14 @@
 import React from "react";
+import "./style.scss";
+import { InputType } from "../../types";
+export interface IProps {
+  type: InputType;
+}
 
-export default function Input() {
+export default function Input({ type = "text" }: IProps) {
   return (
     <div className="input">
-      <input className="input__input" type="text" />
+      <input type={type} className="input__input" />
     </div>
   );
 }
