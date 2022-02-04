@@ -1,0 +1,51 @@
+@import "../../style/vars/_index.scss";
+:root {
+  --btn-border-radius: 8px;
+  --btn-border-size: 2px;
+}
+
+.btn {
+  display: block;
+  width: fit-content;
+  padding: 16px 40px;
+  border-radius: var(--btn-border-radius);
+
+  background-color: var(--color-btn-background);
+  color: var(--color-btn-text);
+
+  @include typo-cta-primary;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in-out;
+
+  &:hover:not([disabled]) {
+    background-color: var(--color-btn-background-hover);
+  }
+
+  &:focus {
+    border: var(--btn-border-size) solid var(--color-btn-border);
+    padding: 14px 38px;
+  }
+
+  &:disabled {
+    cursor: auto;
+  }
+
+  &:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease-in-out;
+    background-color: var(--color-btn-background);
+    box-shadow: inset 2px 2px 4px var(--color-btn-background);
+  }
+
+  &:disabled {
+    color: $color-grey-base;
+    background: $color-grey-lighten;
+  }
+}
+
+.btn--primary {
+  --color-btn-background: #{$color-primary-base};
+  --color-btn-background-hover: #{$color-primary-lighten};
+  --color-btn-text: #{$color-primary-white};
+  --color-btn-border: #{$color-primary-darken};
+}

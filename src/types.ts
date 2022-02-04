@@ -1,4 +1,5 @@
 export type IconsType = "check" | "cross" | "eye-open" | "eye-slashed" | "plus";
+export type BtnType = "primary";
 export type ColorsType =
   | "primary-base"
   | "primary-lighten"

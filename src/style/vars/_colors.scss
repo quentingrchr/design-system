@@ -1,19 +1,17 @@
-$colors: (
-    /* Primary */
-    "primary-base": #a532ff,
-    "primary-lighten": #d094ff,
-    "primary-darken": #62298f,
-    "primary-white": #f8f8f8,
-    "primary-dark": #0a0a0a,
+/* Primary */
+$color-primary-base: #a532ff;
+$color-primary-lighten: #d094ff;
+$color-primary-darken: #62298f;
+$color-primary-white: #f8f8f8;
+$color-primary-dark: #0a0a0a;
 
-    /* Grey */
-    "grey-base": #b2b2b2,
-    "grey-lighten": #dcdcdc,
-    "grey-darken": #878787,
+/* Grey */
+$color-grey-base: #b2b2b2;
+$color-grey-lighten: #dcdcdc;
+$color-grey-darken: #878787;
 
-    /* Success */
-    "success-base": #37c54e,
+/* Success */
+$color-success-base: #37c54e;
 
-    /* Danger */
-    "danger-base": #c53737
-)
+/* Danger */
+$color-danger-base: #c53737;
