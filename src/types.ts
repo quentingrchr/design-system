@@ -5,4 +5,8 @@ export type ColorsType =
   | "primary-darken"
   | "primary-black"
   | "primary-white"
+  | "danger"
+  | "grey"
+  | "grey-lighten"
+  | "grey-darken"
   | "success";
