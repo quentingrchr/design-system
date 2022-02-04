@@ -1,13 +1,14 @@
 export type IconsType = "check" | "cross" | "eye-open" | "eye-slashed" | "plus";
 export type ColorsType =
-  | "primary"
+  | "primary-base"
   | "primary-lighten"
   | "primary-darken"
-  | "primary-black"
   | "primary-white"
-  | "danger"
-  | "white"
-  | "grey"
+  | "primary-dark"
+
+  | "grey-base"
   | "grey-lighten"
   | "grey-darken"
-  | "success";
+
+  | "success-base"
+  | "danger-base";

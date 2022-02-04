@@ -21,6 +21,6 @@ const Icons: IIcons = {
   plus: <Plus />,
 };
 
-export default function Icon({ type, color = "primary" }: IProps) {
-  return <div className={color}>{Icons[type]}</div>;
+export default function Icon({ type, color }: IProps) {
+  return <div className={`fill-${color}`}>{Icons[type]}</div>;
 }

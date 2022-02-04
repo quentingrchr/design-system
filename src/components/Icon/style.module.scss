@@ -1,34 +1,12 @@
+@use "sass:map";
+@import "../../style/vars/_index.scss";
+
 .iconContainer {
   width: fit-content;
 }
 
-.primary {
-  fill: $color-primary-base;
-}
-.primary-lighten {
-  fill: $color-primary-lighten;
-}
-.primary-darken {
-  fill: $color-primary-darken;
-}
-.primary-white {
-  fill: $color-primary-white;
-}
-.primary-dark {
-  fill: $color-primary-dark;
-}
-.grey {
-  fill: $color-grey-base;
-}
-.grey-lighten {
-  fill: $color-grey-lighten;
-}
-.grey-darken {
-  fill: $color-grey-darken;
-}
-.success {
-  fill: $color-success-base;
-}
-.danger {
-  fill: $color-danger-base;
+@each $name, $color in $colors {
+  .fill-#{$name} {
+    fill: $color;
+  }
 }
