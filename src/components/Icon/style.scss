@@ -2,7 +2,9 @@
 
 .icon {
   width: fit-content;
-  fill: var(--color-icon-color);
+  svg, path {
+    fill: var(--color-icon-color);
+  }
 }
 
 /* Primary */
