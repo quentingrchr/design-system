@@ -1,3 +1,4 @@
+@use "sass:map";
 @import "../../style/vars/_index.scss";
 
 .btn {
@@ -5,29 +6,38 @@
   width: fit-content;
   padding: 16px 40px;
   border-radius: 8px;
-  @include typo-cta-primary($color: $color-primary-white);
-  background-color: $color-primary-base;
+  @include typo-cta-primary($color: map.get($colors, primary-white));
+  background-color: map.get($colors, primary-base);
   cursor: pointer;
   transition: background-color .15s ease-in-out;
 
   &:hover {
-    background-color: $color-primary-lighten;
+    background-color: map.get($colors, primary-lighten);
   }
 
   &:focus {
-    border: 2px solid $color-primary-darken;
+    border: 2px solid map.get($colors, primary-darken);
     padding: 14px 38px;
   }
 
   &:active {
-    box-shadow: inset 2px 2px 4px $color-primary-base;
-    background-color: $color-primary-base;
+    box-shadow: inset 2px 2px 4px map.get($colors, primary-base);
+    background-color: map.get($colors, primary-base);
     transform: translate3d(0, 2px, 0) scale(0.95) skewX(5deg);
     transition: transform .1s ease-in-out;
   }
 
   &:disabled {
-    color: $color-grey-base;
-    background: $color-grey-lighten;
+    color: map.get($colors, primary-base);
+    background: map.get($colors, primary-lighten);
+  }
+}
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background: $color;
+  }
+  .text-#{$name} {
+    color: $color;
   }
 }

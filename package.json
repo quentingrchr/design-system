@@ -2,6 +2,20 @@
   "name": "app",
   "version": "0.1.0",
   "private": true,
+  "paths": {
+    "@src/*": [
+      "./src/*"
+    ],
+    "@assets/*": [
+      "./src/assets/*"
+    ],
+    "@components/*": [
+      "./src/components/*"
+    ],
+    "@style/*": [
+      "./src/style/*"
+    ]
+  },
   "dependencies": {
     "@storybook/react": "^6.4.18",
     "@testing-library/jest-dom": "^5.14.1",
