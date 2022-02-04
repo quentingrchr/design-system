@@ -1,4 +1,5 @@
 import React from "react";
+import cn from 'classnames/bind';
 import styles from "./style.module.scss";
 
 export interface IProps {
@@ -6,5 +7,5 @@ export interface IProps {
 }
 
 export default function index(props: IProps) {
-  return <div className={styles.btn}>{props.label}</div>;
+  return <button className={styles.btn}>{props.label}</button>;
 }

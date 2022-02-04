@@ -1,6 +1,33 @@
 @import "../../style/vars/_index.scss";
 
 .btn {
-  font-size: 40px;
-  @include typo-headline-large($color: $color-primary-base);
+  display: block;
+  width: fit-content;
+  padding: 16px 40px;
+  border-radius: 8px;
+  @include typo-cta-primary($color: $color-primary-white);
+  background-color: $color-primary-base;
+  cursor: pointer;
+  transition: background-color .15s ease-in-out;
+
+  &:hover {
+    background-color: $color-primary-lighten;
+  }
+
+  &:focus {
+    border: 2px solid $color-primary-darken;
+    padding: 14px 38px;
+  }
+
+  &:active {
+    box-shadow: inset 2px 2px 4px $color-primary-base;
+    background-color: $color-primary-base;
+    transform: translate3d(0, 2px, 0) scale(0.95) skewX(5deg);
+    transition: transform .1s ease-in-out;
+  }
+
+  &:disabled {
+    color: $color-grey-base;
+    background: $color-grey-lighten;
+  }
 }
