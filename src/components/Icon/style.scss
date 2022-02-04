@@ -1,12 +1,44 @@
-@use "sass:map";
 @import "../../style/vars/_index.scss";
 
 .icon {
   width: fit-content;
+  background-color: var(--color-icon-background);
 }
 
-@each $name, $color in $colors {
-  .icon-#{$name} {
-    fill: $color;
-  }
+/* Primary */
+.icon--primary-base {
+  --color-icon-background: #{$color-primary-base};
+}
+.icon--primary-lighten {
+  --color-icon-background: #{$color-primary-lighten};
+}
+.icon--primary-darken {
+  --color-icon-background: #{$color-primary-darken};
+}
+.icon--primary-white {
+  --color-icon-background: #{$color-primary-white};
+}
+.icon--primary-dark {
+  --color-icon-background: #{$color-primary-dark};
+}
+
+/* Grey */
+.icon--grey-base {
+  --color-icon-background: #{$color-grey-base};
+}
+.icon--grey-lighten {
+  --color-icon-background: #{$color-grey-lighten};
+}
+.icon--grey-darken {
+  --color-icon-background: #{$color-grey-darken};
+}
+
+/* Success */
+.icon--success-base {
+  --color-icon-background: #{$color-success-base};
+}
+
+/* Danger */
+.icon--danger-base {
+  --color-icon-background: #{$color-danger-base};
 }

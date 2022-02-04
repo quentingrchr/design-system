@@ -24,5 +24,5 @@ const Icons: IIcons = {
 };
 
 export default function Icon({ type, color }: IProps) {
-  return <div className={`icon icon-${color}`}>{Icons[type]}</div>;
+  return <div className={`icon icon--${color}`}>{Icons[type]}</div>;
 }

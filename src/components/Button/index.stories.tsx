@@ -14,13 +14,10 @@ export default {
           detail: "Something really really long",
         },
       },
-      color: {
-        control: { type: "select" },
-      },
-      backgroundColor: {
-        control: { type: "select" },
-      },
     },
+    type: {
+      description: "Button type"
+    }
   },
 } as ComponentMeta<typeof Button>;
 
@@ -31,9 +28,8 @@ const Template: ComponentStory<typeof Button> = (args: ButtonProps) => (
 const Primary = Template.bind({});
 
 Primary.args = {
-  color: "primary-base",
-  label: "test",
-  backgroundColor: "primary-dark",
+  text:"test",
+  type:"primary"
 };
 
 export { Primary };
