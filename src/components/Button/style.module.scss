@@ -2,5 +2,5 @@
 
 .btn {
   font-size: 40px;
-  color: $color-primary;
+  @include typo-headline-large($color: $color-primary-base);
 }
