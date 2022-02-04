@@ -15,6 +15,16 @@ const Primary = Template.bind({});
 
 Primary.args = {
   label: "register",
+  backgroundColor: "primary-base",
+  color: "primary-white"
 };
 
-export { Primary };
+const Hovered = Template.bind({});
+
+Hovered.args = {
+  label: "register",
+  backgroundColor: "primary-base",
+  color: "primary-white"
+};
+
+export { Primary, Hovered };

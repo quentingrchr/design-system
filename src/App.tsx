@@ -7,6 +7,7 @@ import Button from './components/Button/index'
 function App() {
   return (
     <div>
+      <Icon type="check" />
       <Button label="register" backgroundColor="primary-base" color="primary-white" />
     </div>
   );
