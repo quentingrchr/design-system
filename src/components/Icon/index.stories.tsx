@@ -15,6 +15,7 @@ const Primary = Template.bind({});
 
 Primary.args = {
   type: "check",
+  color: "primary-base",
 };
 
 export { Primary };
