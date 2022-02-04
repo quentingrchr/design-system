@@ -8,7 +8,7 @@ function App() {
   return (
     <div>
       <Icon type="check" />
-      <Button label="register" backgroundColor="primary-base" color="primary-white" />
+      <Button label="register" backgroundColor="primary-base" color="primary-white"/>
     </div>
   );
 }

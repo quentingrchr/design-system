@@ -29,8 +29,8 @@
   }
 
   &:disabled {
-    color: var(--color-text);
-    background: var(--color-bg);
+    color: map.get($colors, grey-base);
+    background: map.get($colors, grey-lighten);
   }
 }
 

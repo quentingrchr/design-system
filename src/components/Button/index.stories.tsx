@@ -19,12 +19,12 @@ Primary.args = {
   color: "primary-white"
 };
 
-const Hovered = Template.bind({});
+const Disabled = Template.bind({});
 
-Hovered.args = {
+Disabled.args = {
   label: "register",
   backgroundColor: "primary-base",
   color: "primary-white"
 };
 
-export { Primary, Hovered };
+export { Primary, Disabled };
