@@ -2,13 +2,13 @@ import React from "react";
 import { useState, useEffect } from "react";
 import cn from "classnames";
 import "./style.scss";
-import { InputType, IconsType } from "../../types";
+import { InputTextType, IconsType } from "../../types";
 import Icon from "../Icon";
 
 export interface IProps {
-  type: InputType;
+  type: InputTextType;
   placeholder: string;
-  icon?: IconsType;
+  icon?: IconsType | "";
   disabled?: boolean;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
   onClickOnIcon?: () => void;

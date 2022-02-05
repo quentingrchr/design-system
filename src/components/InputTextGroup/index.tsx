@@ -1,47 +1,76 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
+import cn from "classnames";
 import { VStack } from "../Stack";
+import { InputTextType, IconsType } from "../../types";
 import "./style.scss";
 import Input from "../Input";
 import Label from "../Label";
-import Text from "../Text";
+import BottomText from "./BottomText";
 
-export default function InputTextGroup() {
+export interface IProps {
+  labelText: string;
+  labelFor: string;
+  placeholder: string;
+  inputType?: InputTextType;
+  helpText?: string;
+  successText?: string;
+  errorText?: string;
+  inputIcon: IconsType | "";
+  disabled?: boolean;
+}
+
+export default function InputTextGroup({
+  labelText = "Label",
+  labelFor = "label",
+  helpText = "",
+  successText = "",
+  errorText = "",
+  placeholder = "placeholder",
+  inputType = "text",
+  inputIcon = "",
+  disabled = false,
+}: IProps) {
   const [isValid, setIsValid] = useState<boolean | null>(null);
 
   const updateIsValid = (value: boolean | null) => {
+    if (disabled) return;
     setIsValid(value);
   };
 
+  const Bottom = () => {
+    if (disabled) return;
+    if (isValid === true && successText) {
+      return <BottomText text={successText} type="success" />;
+    } else if (isValid === false && errorText) {
+      return <BottomText text={errorText} type="error" />;
+    } else {
+      if (helpText) {
+        return <BottomText text={helpText} type="help" />;
+      }
+      return null;
+    }
+  };
+
   return (
-    <div className="input-text-group">
+    <div
+      className={cn("input-text-group", {
+        "input-text-group--disabled": disabled,
+      })}
+    >
       <VStack alignItems="start" justifyContent="center" spacing="sm">
         <div>
-          <Label name="name" content="email" />
+          <Label labelFor={labelFor} content={labelText} />
           {/* todo add link btn */}
         </div>
         <VStack alignItems="start" justifyContent="center" spacing="xs">
           <Input
-            placeholder="placeholder"
-            type="text"
-            icon="check"
+            disabled={disabled}
+            placeholder={placeholder}
+            type={inputType}
+            icon={inputIcon}
             onValidChange={updateIsValid}
           />
-          <div className="input-text-group__info">
-            {/* todo add sucess messsage if valid */}
-            {/* todo add error message if not valid */}
-            <Text
-              tag="p"
-              typo="body-m"
-              content="here are additionnal informations"
-              color={
-                isValid === null
-                  ? "primary-dark"
-                  : isValid
-                  ? "success-base"
-                  : "danger-base"
-              }
-            />
-          </div>
+          <div className="input-text-group__info">{Bottom()}</div>
         </VStack>
       </VStack>
     </div>
