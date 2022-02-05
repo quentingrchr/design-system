@@ -1,4 +1,10 @@
 .input-text-group {
+  width: 100%;
+  &--disabled {
+    cursor: not-allowed;
+    opacity: 0.3 !important;
+    pointer-events: none;
+  }
   &__info {
     padding-left: 2.4rem;
   }
