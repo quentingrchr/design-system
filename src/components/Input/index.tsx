@@ -55,6 +55,7 @@ export default function Input({
         }}
         type={type}
         className="input__input"
+        placeholder={placeholder}
       />
       {icon ? (
         <Icon
