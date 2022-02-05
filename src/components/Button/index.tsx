@@ -5,7 +5,7 @@ import "./style.scss";
 
 export interface ButtonProps {
   text: string;
-  type: BtnType
+  type: BtnType;
 }
 
 export default function Button({
