@@ -6,7 +6,7 @@ export interface IProps {
   tag: HTMLTextTag;
   content: string;
   typo: TextTypography;
-  color: ColorsType;
+  color?: ColorsType;
   attributes?: any;
 }
 export default function Text({
