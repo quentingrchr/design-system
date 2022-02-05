@@ -11,6 +11,11 @@
 
 [App](https://tp-design-system.herokuapp.com/login)
 
+### Routes
+
+- /login
+- /signup
+
 [Storybook](https://desgin-system-storybook.netlify.app/)
 
 [Figma](https://www.figma.com/file/ZApjCi9LT81cZ1BK4OWP17/TP-Design-System?node-id=15%3A3)
