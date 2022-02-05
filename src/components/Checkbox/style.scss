@@ -1,0 +1,46 @@
+@import "../../style/vars/_index.scss";
+
+input[type="checkbox"]:not(:checked), 
+input[type="checkbox"]:checked{
+  position: relative;
+  padding-left: 2.3em;
+  font-size: 1.05em;
+  line-height: 1.7;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:not(:checked)::before, 
+input[type="checkbox"]:checked::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.4em;
+    height: 1.4em;
+    border: 1px solid $color-primary-base;
+    background: #FFF;
+    border-radius: .2em;
+}
+
+input[type="checkbox"]:not(:checked):after,
+input[type="checkbox"]:checked:after {
+    content: '';
+    background-image: url(./../../assets/icons/check.svg) ;
+    background-size: 10px;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: .525em;
+    left: .18em;
+    font-size: 1.375em;
+    color: #CB22ED;
+    line-height: 0;
+  }
+
+  input[type="checkbox"]:not(:checked):after {
+    opacity: 0;
+  }
+
+
+.checkbox--primary {
+  --color-checkbox-color: #{$color-primary-base};
+}
