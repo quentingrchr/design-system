@@ -1,17 +1,21 @@
 import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Icon from "./components/Icon/index";
 
 import "./style/global.scss";
-import InputTextGroup from "./components/InputTextGroup";
-import Button from "./components/Button/index";
-import Stack, { VStack, HStack } from "./components/Stack";
-import Box from "./components/Box";
+import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
 
 function App() {
   return (
-    <div>
-      <InputTextGroup />
-    </div>
+    <Router>
+      <Routes>
+          <Route path="/" element={<Login/>} />
+          <Route path="/SignUp" element={<SignUp/>} />
+          <Route path="*" element={<Login/>} />
+
+        </Routes>
+    </Router>
   );
 }
 

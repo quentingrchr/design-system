@@ -18,7 +18,7 @@ export default function Text({
 }: IProps) {
   const element = React.createElement(
     tag,
-    { class: `text ${typo} ${color}`, ...attributes },
+    { className: `text ${typo} ${color}`, ...attributes },
     content
   );
   return element;
