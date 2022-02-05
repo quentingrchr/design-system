@@ -11,11 +11,19 @@ const Template: ComponentStory<typeof Icon> = (args: IProps) => (
   <Icon {...args} />
 );
 
-const Primary = Template.bind({});
+const Default = Template.bind({});
 
-Primary.args = {
+Default.args = {
   type: "check",
   color: "primary-base",
 };
 
-export { Primary };
+const ActionIcon = Template.bind({});
+ActionIcon.args = {
+  type: "check",
+  color: "primary-base",
+  onClick: () => {
+    alert("clicked");
+  },
+};
+export { Default, ActionIcon };

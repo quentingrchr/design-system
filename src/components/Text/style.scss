@@ -2,6 +2,36 @@
 
 .text {
   color: black;
+  &.primary-base {
+    color: $color-primary-base;
+  }
+  &.primary-lighten {
+    color: $color-primary-lighten;
+  }
+  &.primary-darken {
+    color: $color-primary-darken;
+  }
+  &.primary-white {
+    color: $color-primary-white;
+  }
+  &.primary-dark {
+    color: $color-primary-dark;
+  }
+  &.grey-base {
+    color: $color-grey-base;
+  }
+  &.grey-lighten {
+    color: $color-grey-lighten;
+  }
+  &.grey-darken {
+    color: $color-grey-darken;
+  }
+  &.success-base {
+    color: $color-success-base;
+  }
+  &.danger-base {
+    color: $color-danger-base;
+  }
 }
 .heading-l {
   @include typo-headline-large;

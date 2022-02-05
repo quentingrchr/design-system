@@ -14,13 +14,26 @@ const Default = Template.bind({});
 
 Default.args = {
   type: "text",
+  placeholder: "placeholder",
 };
 
 const WithIcon = Template.bind({});
 
 WithIcon.args = {
   type: "text",
+  placeholder: "placeholder",
+  icon: "check",
+  onClickOnIcon: () => {
+    alert("clicked");
+  },
 };
-/* todo: add icon */
 
-export { Default };
+const Disabled = Template.bind({});
+
+Disabled.args = {
+  type: "text",
+  placeholder: "placeholder",
+  icon: "check",
+  disabled: true,
+};
+export { Default, WithIcon, Disabled };

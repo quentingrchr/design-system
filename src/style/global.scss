@@ -153,3 +153,8 @@ button::-moz-focus-inner {
 html {
   font-size: 10px;
 }
+
+:root {
+  --btn-border-radius: 8px;
+  --btn-border-size: 2px;
+}

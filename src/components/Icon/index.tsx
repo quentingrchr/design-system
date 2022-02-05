@@ -11,6 +11,7 @@ import { IconsType, ColorsType } from "../../types";
 export interface IProps {
   type: IconsType;
   color?: ColorsType;
+  onClick?: (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
 }
 interface IIcons {
   [String: string]: JSX.Element;
@@ -23,6 +24,10 @@ const Icons: IIcons = {
   plus: <Plus />,
 };
 
-export default function Icon({ type, color }: IProps) {
-  return <div className={`icon icon--${color}`}>{Icons[type]}</div>;
+export default function Icon({ type, color, onClick = () => {} }: IProps) {
+  return (
+    <div onClick={(e) => onClick(e)} className={`icon icon--${color}`}>
+      {Icons[type]}
+    </div>
+  );
 }

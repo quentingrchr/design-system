@@ -1,0 +1,67 @@
+@import "../../style/vars/_index.scss";
+
+.stack {
+  display: flex;
+  gap: var(--space, 1.5rem);
+
+  /* direction */
+  &.stack-v {
+    flex-direction: column;
+  }
+  &.stack-h {
+    flex-direction: row;
+  }
+
+  /* alignItems */
+
+  &.align-start {
+    align-items: flex-start;
+  }
+  &.align-center {
+    align-items: center;
+  }
+  &.align-end {
+    align-items: flex-end;
+  }
+  &.align-sp-between {
+    align-items: space-between;
+  }
+  &.align-sp-around {
+    align-items: space-around;
+  }
+
+  /* justifyStart */
+
+  &.justify-start {
+    justify-content: flex-start;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.justify-end {
+    justify-content: flex-end;
+  }
+  &.justify-sp-between {
+    justify-content: space-between;
+  }
+  &.justify-sp-around {
+    justify-content: space-around;
+  }
+
+  /* spacing */
+  &.spacing-none {
+    --space: 0;
+  }
+  &.spacing-xs {
+    --space: #{$m-xs};
+  }
+  &.spacing-sm {
+    --space: #{$m-sm};
+  }
+  &.spacing-md {
+    --space: #{$m-md};
+  }
+  &.spacing-lg {
+    --space: #{$m-lg};
+  }
+}

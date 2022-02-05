@@ -2,14 +2,15 @@ import React from "react";
 import Icon from "./components/Icon/index";
 
 import "./style/global.scss";
-import Input from "./components/Input/index";
+import InputTextGroup from "./components/InputTextGroup";
 import Button from "./components/Button/index";
+import Stack, { VStack, HStack } from "./components/Stack";
+import Box from "./components/Box";
 
 function App() {
   return (
     <div>
-      <Input />
-      <Button text="register" type="primary"/>
+      <InputTextGroup />
     </div>
   );
 }
