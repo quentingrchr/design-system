@@ -6,7 +6,7 @@ export interface IProps {
   tag: HTMLTextTag;
   content: string;
   typo: TextTypography;
-  color: ColorsType;
+  color?: ColorsType;
   attributes?: any;
 }
 export default function Text({
@@ -18,7 +18,7 @@ export default function Text({
 }: IProps) {
   const element = React.createElement(
     tag,
-    { class: `text ${typo} ${color}`, ...attributes },
+    { className: `text ${typo} ${color}`, ...attributes },
     content
   );
   return element;

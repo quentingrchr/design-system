@@ -3,14 +3,14 @@ import "./style.scss";
 
 export interface IProps {
   content: string;
-  name: string;
+  labelFor: string;
 }
 
-export default function Label({ content, name, ...otherProps }: IProps) {
+export default function Label({ content, labelFor, ...otherProps }: IProps) {
   return (
     <Text
       content={content}
-      attributes={{ name, ...otherProps }}
+      attributes={{ for: labelFor, ...otherProps }}
       tag="label"
       typo="label"
     />

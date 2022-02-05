@@ -14,7 +14,7 @@ const Default = Template.bind({});
 
 Default.args = {
   content: "Label",
-  name: "label",
+  labelFor: "label",
 };
 
 export { Default };

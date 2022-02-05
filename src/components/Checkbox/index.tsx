@@ -1,22 +1,19 @@
 import React from "react";
 import "./style.scss";
 
-import { ColorsType } from "../../types";
+import Icon from "./../../components/Icon";
 
-
-export interface IProps {
-    color?: ColorsType;
-}
-
-export default function Checkbox({color}:IProps) {
+export default function Checkbox() {
     return(
-        <div>
-            <label htmlFor="rememberMe">remember me ?</label>
+        <div className="checkbox">
             <input 
                 id="rememberMe" 
-                className={`checkbox checkbox--${color}`} 
+                className="checkbox__box"
                 type="checkbox" 
             />
+            <label htmlFor="rememberMe" className="checkbox__custom">
+                <Icon type="check"/>
+            </label>
         </div>
     )
 }
