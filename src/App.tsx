@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Icon from "./components/Icon/index";
 
 import "./style/global.scss";
 import Login from "./pages/Login";
