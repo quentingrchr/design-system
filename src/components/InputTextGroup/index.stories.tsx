@@ -82,6 +82,23 @@ InputGroupDisabled.args = {
   inputIcon: "check",
 };
 
+const InputGroupWithLink = Template.bind({});
+
+InputGroupWithLink.args = {
+  labelText: "email",
+  labelFor: "email",
+  helpText: "Help text 🤔",
+  errorText: "Error text ❌",
+  successText: "Success text ✅",
+  placeholder: "placeholder@gmail.com",
+  inputType: "email",
+  inputIcon: "check",
+  link: {
+    href: "https://google.com",
+    text: "Forgot password ?",
+  },
+};
+
 export {
   Default,
   InputGroupWithHelper,
@@ -89,4 +106,5 @@ export {
   InputGroupWithError,
   InputGroupWithSuccessAndErrorText,
   InputGroupDisabled,
+  InputGroupWithLink,
 };

@@ -12,6 +12,9 @@
   @include typo-cta-primary;
   cursor: pointer;
   transition: background-color 0.15s ease-in-out;
+  &--full-width {
+    width: 100%;
+  }
 
   &:hover:not([disabled]) {
     background-color: var(--color-btn-background-hover);

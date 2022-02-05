@@ -1,12 +1,17 @@
 import { useState } from "react";
 import cn from "classnames";
-import { VStack } from "../Stack";
+import { HStack, VStack } from "../Stack";
 import { InputTextType, IconsType } from "../../types";
 import "./style.scss";
 import Input from "../Input";
 import Label from "../Label";
 import BottomText from "./BottomText";
+import Link from "../Link";
 
+type LinkType = {
+  href: string;
+  text: string;
+};
 export interface IProps {
   labelText: string;
   labelFor: string;
@@ -15,8 +20,9 @@ export interface IProps {
   helpText?: string;
   successText?: string;
   errorText?: string;
-  inputIcon: IconsType | "";
+  inputIcon?: IconsType | "";
   disabled?: boolean;
+  link?: LinkType | null;
 }
 
 export default function InputTextGroup({
@@ -29,6 +35,7 @@ export default function InputTextGroup({
   inputType = "text",
   inputIcon = "",
   disabled = false,
+  link = null,
 }: IProps) {
   const [isValid, setIsValid] = useState<boolean | null>(null);
 
@@ -58,10 +65,10 @@ export default function InputTextGroup({
       })}
     >
       <VStack alignItems="start" justifyContent="center" spacing="sm">
-        <div>
+        <HStack alignItems="center" justifyContent="sp-between" spacing="none">
           <Label labelFor={labelFor} content={labelText} />
-          {/* todo add link btn */}
-        </div>
+          {link && <Link text={link.text} to={link.href} />}
+        </HStack>
         <VStack alignItems="start" justifyContent="center" spacing="xs">
           <Input
             disabled={disabled}
