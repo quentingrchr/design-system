@@ -5,16 +5,18 @@ import "./style.scss";
 
 export interface ButtonProps {
   text: string;
-  type: BtnType
+  type: BtnType;
+  fullWidth?: boolean;
 }
 
 export default function Button({
   text = "test",
-  type = "primary"
+  type = "primary",
+  fullWidth = false,
 }: ButtonProps) {
   return (
     <button
-      className={cn('btn', `btn--${type}`)}
+      className={cn("btn", `btn--${type}`, { "btn--full-width": fullWidth })}
     >
       {text}
     </button>

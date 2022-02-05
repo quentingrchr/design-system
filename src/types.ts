@@ -36,4 +36,4 @@ export type TextTypography =
   | "cta-primary"
   | "cta-secondary";
 
-export type InputType = "text" | "password" | "email" | "number" | "tel";
+export type InputTextType = "text" | "password" | "email" | "number" | "tel";

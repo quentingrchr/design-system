@@ -1,0 +1,54 @@
+@import "../../style/vars/_index.scss";
+
+.container {
+  margin: auto;
+  height: 100%;
+  &--center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &--sm {
+    max-width: $max-w-sm;
+  }
+  &--md {
+    max-width: $max-w-md;
+  }
+  &--lg {
+    max-width: $max-w-lg;
+  }
+  &--xl {
+    max-width: $max-w-xl;
+  }
+
+  &--bg-color-primary-base {
+    background-color: $color-primary-base;
+  }
+  &--bg-color-primary-lighten {
+    background-color: $color-primary-lighten;
+  }
+  &--bg-color-primary-darken {
+    background-color: $color-primary-darken;
+  }
+  &--bg-color-primary-white {
+    background-color: $color-primary-white;
+  }
+  &--bg-color-primary-dark {
+    background-color: $color-primary-dark;
+  }
+  &--bg-color-grey-base {
+    background-color: $color-grey-base;
+  }
+  &--bg-color-grey-lighten {
+    background-color: $color-grey-lighten;
+  }
+  &--bg-color-grey-darken {
+    background-color: $color-grey-darken;
+  }
+  &--bg-color-success-base {
+    background-color: $color-success-base;
+  }
+  &--bg-color-danger-base {
+    background-color: $color-danger-base;
+  }
+}
