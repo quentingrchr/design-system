@@ -17,7 +17,7 @@ export default function BottomText({ text, type }: IProps) {
   const textColor: ColorsMap = {
     success: "success-base",
     error: "danger-base",
-    help: "primary-dark",
+    help: "grey-darken",
   };
 
   if (!text) return null;
