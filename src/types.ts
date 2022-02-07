@@ -9,8 +9,8 @@ export type ColorsType =
   | "grey-base"
   | "grey-lighten"
   | "grey-darken"
-  | "success-base"
-  | "danger-base";
+  | "status-success"
+  | "status-danger";
 
 export type HTMLTextTag =
   | "p"
@@ -31,8 +31,8 @@ export type TextTypography =
   | "heading-l"
   | "body-m"
   | "body-m-underlined"
-  | "label"
-  | "placeholder"
+  | "form-label"
+  | "form-placeholder"
   | "cta-primary"
   | "cta-secondary";
 

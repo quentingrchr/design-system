@@ -12,7 +12,7 @@ export default function Label({ content, labelFor, ...otherProps }: IProps) {
       content={content}
       attributes={{ for: labelFor, ...otherProps }}
       tag="label"
-      typo="label"
+      typo="form-label"
     />
   );
 }

@@ -26,15 +26,15 @@
   &.grey-darken {
     color: $color-grey-darken;
   }
-  &.success-base {
-    color: $color-success-base;
+  &.status-success {
+    color: $color-status-success;
   }
-  &.danger-base {
-    color: $color-danger-base;
+  &.status-danger {
+    color: $color-status-danger;
   }
 }
 .heading-l {
-  @include typo-headline-large;
+  @include typo-heading-l;
 }
 .body-m {
   @include typo-body-m;
@@ -43,10 +43,10 @@
   @include typo-body-m-underlined;
 }
 .label {
-  @include typo-label;
+  @include typo-form-label;
 }
 .placeholder {
-  @include typo-placeholder;
+  @include typo-form-placeholder;
 }
 
 .cta-primary {

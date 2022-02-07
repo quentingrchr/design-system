@@ -64,8 +64,8 @@ export default function Input({
             isValid === null
               ? "primary-dark"
               : isValid
-              ? "success-base"
-              : "danger-base"
+              ? "status-success"
+              : "status-danger"
           }
         />
       ) : null}

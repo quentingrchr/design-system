@@ -15,8 +15,8 @@ export type ColorsMap = {
 
 export default function BottomText({ text, type }: IProps) {
   const textColor: ColorsMap = {
-    success: "success-base",
-    error: "danger-base",
+    success: "status-success",
+    error: "status-danger",
     help: "grey-darken",
   };
 

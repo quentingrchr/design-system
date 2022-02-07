@@ -36,11 +36,11 @@
 }
 
 /* Success */
-.icon--success-base {
-  --color-icon-color: #{$color-success-base};
+.icon--status-success {
+  --color-icon-color: #{$color-status-success};
 }
 
 /* Danger */
-.icon--danger-base {
-  --color-icon-color: #{$color-danger-base};
+.icon--status-danger {
+  --color-icon-color: #{$color-status-danger};
 }

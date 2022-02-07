@@ -11,10 +11,10 @@
   display: flex;
   justify-content: space-between;
   &--valid {
-    border: 1px solid $color-success-base;
+    border: 1px solid $color-status-success;
   }
   &--invalid {
-    border: 1px solid $color-danger-base;
+    border: 1px solid $color-status-danger;
   }
   &--disabled {
     opacity: 0.3;
@@ -25,7 +25,7 @@
 
   &__input {
     border: none;
-    @include typo-placeholder;
+    @include typo-form-placeholder;
     &:focus {
       outline: none;
     }

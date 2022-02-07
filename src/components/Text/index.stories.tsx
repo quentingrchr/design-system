@@ -37,7 +37,7 @@ const Label = Template.bind({});
 Label.args = {
   tag: "p",
   content: "I am a label",
-  typo: "label",
+  typo: "form-label",
 };
 
 export { Default, Heading, Paragraph, ParagraphUnderlined, Label };
